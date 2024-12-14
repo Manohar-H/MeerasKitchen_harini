@@ -1,0 +1,567 @@
+/* Harini Manohar's sprint 1 Meera's Kitchen styles sheet */
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainbox {
+    background-color: #f8edeb;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #f9dcc4;
+    position: relative; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center; 
+    flex-grow: 1; 
+}
+
+.logo {
+    max-width: 150px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+header h1 {
+    font-family: fantasy;
+    color: #8f250c;
+    font-size: 28px; 
+    white-space: nowrap; 
+    margin: 0; 
+    flex-grow: 2; 
+    text-align: center; 
+    padding-top: 35px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0;
+    background-color: #f9dcc4;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: fantasy;
+    border-radius: 20px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #8f250c;
+    margin: 0 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #8f250c;
+    color: #f8edeb;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 600px; 
+    margin-bottom: 50px; 
+    border: #8f250c 2px solid;
+    border-radius: 10px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero .text {
+    position: absolute;
+    top: 80%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: #8f250c; 
+    font-size: 16px; 
+    text-align: center;
+    font-family: fantasy; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px; 
+}
+
+hero + .bio {
+    margin-top: 40px; 
+    border-top: 2px solid #8f250c; 
+    padding-top: 20px; 
+}
+
+.hero .text a {
+    color: #8f250c; 
+    text-decoration: none; 
+    font-size: 22px; 
+    font-family: fantasy; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .text a:hover {
+    background-color: #8f250c;
+    color: #f8edeb; 
+}
+
+.hero .text a:visited {
+    color: #8f250c; 
+}
+
+/* Bio Section */
+.bio-section {
+    position: relative;
+    padding: 20px;
+    color: #8f250c; 
+    background-color: #f8edeb; 
+}
+
+.bio-image-top-left {
+    float: left;
+    margin: 0 20px 20px 0; 
+    width: 250px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.bio-image-bottom-right {
+    float: right;
+    position: relative;
+    top: -15px;
+    margin-left: 20px; 
+    margin-bottom: -20px; 
+    width: 250px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.bio-section p {
+    text-align: justify; 
+    font-size: 20px; 
+    line-height: 1.6; 
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f8edeb;
+    padding-top: 50px; 
+    margin-bottom: 30px; 
+    margin-top: 10px; 
+    padding: 20px;
+    border-radius: 15px;
+    border: #8f250c 2px solid;
+
+}
+
+.testimonial-slideshow {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 20px;
+    color: #8f250c;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    color: #8f250c;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+    color:#8f250c;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9dcc4;
+    padding: 15px;
+    color: #8f250c;
+    font-family: fantasy;
+}
+
+.footer-item {
+    text-align: center;
+    flex: 1;
+}
+
+/* Social Media Icons */
+.social-icons i {
+    font-size: 22px; 
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+}
+
+.social-icons i:hover {
+    color: #f8edeb; 
+    background-color: #8f250c;
+}
+
+/* Footer Link Styles */
+.footer-item a {
+    color: #8f250c;
+    text-decoration: underline;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-item a:hover {
+    color: #f8edeb;
+    background-color: #8f250c;
+    text-decoration: underline; 
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Menu Page Table Styling */
+.menu-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8edeb; 
+    border-radius: 8px;
+    border: 2px solid #f4b183; 
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: fantasy;
+    color: #8f250c; 
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 18px;
+    background-color: #fff; 
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    border: 1px solid #8f250c; 
+    padding: 12px;
+    text-align: center;
+    font-family: fantasy;
+    color: #8f250c;
+}
+
+th {
+    background-color: #f9dcc4; 
+    color: #8f250c; 
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+td {
+    font-size: 16px;
+}
+
+td a {
+    color: #8f250c; 
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #f8edeb; 
+    background-color: #8f250c;
+    text-decoration: underline; 
+}
+
+/* Gallery Styling */
+.gallery-slideshow {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.slide-container {
+    display: none;
+    width: 100%; 
+    justify-content: space-between; 
+    flex-shrink: 0;
+}
+
+.slide-container:first-child {
+    display: flex; 
+}
+
+.slide-container img {
+    width: calc(25% - 8px); 
+    height: 200px; 
+    margin-right: 8px;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slide-container img:last-child {
+    margin-right: 0; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu-section h2 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    .slide-container img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+/* Order Page Styles */
+.container {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* Table Styling */
+.menu-table {
+    width: 100%; 
+    margin: 20px auto; 
+    border-collapse: collapse;
+}
+
+.menu-table th, .menu-table td {
+    border: 3px solid #8f250c;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.menu-table th {
+    background-color: #f8edeb;
+    color: #8f250c;
+    font-weight: bold;
+    font-style:italic;
+}
+
+.menu-table td {
+    background-color: #ffffff;
+}
+
+/* Input and Button Styling */
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #8f250c;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.button-container {
+    text-align: right; 
+    margin-top: 15px; 
+}
+
+#place-order-button {
+    background-color: #8f250c;
+    color: #f8edeb;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; 
+    font-family: fantasy;
+}
+
+#place-order-button:hover {
+    background-color: #f4b183;
+    color: #8f250c;
+}
+
+/* Enhanced Order Form Styling */
+.order-form-section {
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f8edeb; 
+    border: 1px solid #8f250c;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: fantasy;
+}
+
+.order-form-section h2 {
+    text-align: center;
+    color: #8f250c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-form-section label {
+    font-weight: bold;
+    color: #8f250c;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 1px solid #8f250c;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: #8f250c;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+#cart {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #8f250c;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    color: #8f250c;
+}
+
+h3 {
+    text-align: center;
+    color: #8f250c;
+    margin-bottom: 10px;
+    font-family: fantasy;
+}
+
+.cart-summary {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #8f250c;
+    font-family: fantasy;
+    text-align: center;
+}
+
+#checkout-button {
+    background-color: #8f250c;
+    color: #f8edeb;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto 0;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+#checkout-button:hover {
+    background-color: #f4b183;
+    color: #8f250c;
+}
+
+/* Contact fields alignment */
+.phone-email-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.phone-email-wrapper input {
+    flex: 1; 
+}

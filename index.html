@@ -1,0 +1,132 @@
+<!-- Description: Meera's Kitchen Sprint 1 -->
+<!-- Author: Harini Manohar -->
+<!-- Date: Nov 1, 2024 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEERA's KITCHEN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="mainbox">
+        <header>
+            <div class="header-left">
+                <img class="logo" src="pics/MeeraLogo.png" alt="Meera's Logo">
+                <h1><i class="fa fa-hands-praying"></i> Welcome to Meera's Kitchen <i class="fa fa-hands-praying"></i></h1>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" target="_blank"><i class="fas fa-home"></i> Home</a>
+            <a href="menu.html" target="_blank"><i class="fas fa-utensils"></i> Menu</a>
+            <a href="order.html" target="_blank"><i class="fas fa-shopping-cart"></i> Order</a>
+        </nav>
+
+        <!-- Hero Section / Gallery Slideshow -->
+        <div class="hero">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="pics/Food/Mixture.jpg" alt="Food 1">
+                    <div class="text"><a href="order.html" target="_blank">Spicy Crispy Mixture</a></div>
+                </div>
+                <div class="slides fade">
+                    <img src="pics/Food/Parupusuli.jpeg" alt="Food 2">
+                    <div class="text"><a href="order.html" target="_blank">Sambar Rice & Parupusili</a></div>
+                </div>
+                <div class="slides fade">
+                    <img src="pics/Food/Sweets.jpg" alt="Food 3">
+                    <div class="text"><a href="order.html" target="_blank">Diwali Sweets</a></div>
+                </div>
+                <!-- Navigation Arrows -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- Dots/Indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- Bio Section -->
+        <section class="bio-section">
+            <div class="bio-text">
+                <img src="pics/Biopic2.jpg" alt="Meera and Anand" class="bio-image-top-left">
+
+                <h2>Meet the Heart and Soul of Meera's Kitchen</h2>
+                <br>
+                <p>Meera and Anand Manohar have spent a lifetime cultivating the perfect balance of tradition, innovation, and love in their culinary endeavors. At the heart of this family duo is Meera, the brilliant master chef whose passion for cooking was ignited in her early years, growing up in the bustling kitchens of Tamil Nadu. With a deep love for authentic Indian flavors, Meera has honed her skills over decades, mastering the art of transforming simple ingredients into gourmet experiences. Her cooking is not just about food; it's an art form that brings people together, fosters connection, and celebrates the heritage of South India with a modern twist.</p>
+                <br>
+                <img src="pics/Biopic.jpg" alt="Meera and Anand 2" class="bio-image-bottom-right">
+                <p>Beside her, every step of the way, is her devoted partner Anand, the quiet but steadfast sous chef. Anand's culinary journey began as a helper to Meera, but over time, he has developed a deep expertise in preparing flavorful, soulful dishes. Whether it's perfecting a family recipe passed down through generations or introducing new techniques to keep the kitchen exciting, Anand has become an invaluable part of the kitchen, embodying the perfect harmony of precision and passion. Together, they create dishes that not only tell a story but evoke memories of home, comfort, and family.</p>      
+                <br> 
+                <br>
+                <p>From festivals to intimate family dinners, Meera and Anand have perfected the art of creating culinary masterpieces that have delighted loved ones for years. Their kitchen is a sanctuary of flavors, where tradition meets creativity, and every meal is an opportunity to share their journey with the world. At Meera's Kitchen, you'll find not just food, but the essence of love, culture, and decades of expertise wrapped in every dish.
+                </p>
+                <br>
+                <br>
+                <p>Scroll down to read the reviews left by some of our regulars!</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <div class="testimonial-slideshow">
+                <div class="testimonial fade" id="testimonial1">
+                    <img src="pics/TestimonialPics/Leo1.jpg" alt="Customer 1">
+                    <p>“Stepping into Meera’s Kitchen is like being wrapped in a warm embrace. Every dish tells a story, bursting with rich flavors and intricate spices that transport you straight to the heart of Tamil Nadu. Meera’s meticulous attention to detail and Anand’s supportive touch make every meal feel like a celebration. Whether it’s a simple weeknight dinner or a grand feast, each bite is a testament to decades of passion, expertise, and the love they pour into their craft. This kitchen doesn’t just serve food; it serves experiences that linger long after the last morsel.”</p>
+                </div>
+                <div class="testimonial fade" id="testimonial2">
+                    <img src="pics/TestimonialPics/Mowgli1.jpg" alt="Customer 2">
+                    <p>“I have had the privilege of tasting the magic that is created in Meera’s Kitchen, and it’s nothing short of extraordinary. Meera and Anand make every dish feel like a masterpiece, blending tradition with innovation seamlessly. The flavors are bold yet familiar, comforting yet exciting. The warmth of their kitchen is evident not just in the food but in the hospitality they offer. You leave not only with a satisfied palate but with a heart full of warmth and memories you’ll cherish. Their kitchen is a true reflection of who they are: generous, skilled, and full of love.”
+                    </p>
+                </div>
+                <div class="testimonial fade" id="testimonial3">
+                    <img src="pics/TestimonialPics/Leo2.jpg" alt="Customer 3">
+                    <p>“There’s something uniquely special about Meera’s Kitchen. From the moment you step in, you’re greeted with the inviting aromas of freshly ground spices and sizzling curry leaves. The magic lies in how Meera and Anand, as the dynamic duo, infuse their love and heritage into every dish. Meera’s unparalleled skill as the master chef is evident in the depth of flavor and flawless presentation, while Anand’s attentive sous chef touch ensures everything runs seamlessly. Their food is the epitome of comfort and tradition, leaving you wanting just one more bite."</p>
+                </div>
+                <div class="testimonial fade" id="testimonial4">
+                    <img src="pics/TestimonialPics/Mowgli2.jpg" alt="Customer 4">
+                    <p>“Dining at Meera’s Kitchen is a journey of flavors that takes you straight to the heart of India. Each dish is crafted with such precision and love that it feels like a warm hug from home. The perfect blend of traditional spices and modern cooking techniques is evident in every bite, whether it’s the crisp and spicy Masala Vada or the rich, aromatic curries. Meera’s passion as the master chef shines through, while Anand’s steady hand as the sous chef adds the perfect touch. Their hospitality, paired with the incredible food, makes every visit unforgettable.”</p>
+                </div>
+            </div>
+            <!-- Arrows -->
+            <a class="prev" onclick="plusTestimonials(-1)">&#10094;</a>
+            <a class="next" onclick="plusTestimonials(1)">&#10095;</a>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-item">
+                <p>Follow us on Social Media</p>
+                <div class="social-icons">
+                    <p>
+                        <a href="https://www.facebook.com" title="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                        <a href="https://www.twitter.com" title="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                        <a href="https://www.instagram.com" title="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <p>Contact Us: 709-1234</p>
+                <p>Visit us: 123 Anywhere St., St. John's, NL</p>
+                
+            </div>
+            <div class="footer-item">
+                <p><a href="menu.html" target="_blank">Click here to view our Exotic Menu!</a></p>
+                <p>We are open from 12am to 12pm</p>
+            </div>
+        </footer>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
